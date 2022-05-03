@@ -14,5 +14,13 @@ app.use(express.json());
 // Routes
 app.use("/api/v1/animals", animalRouter);
 
+// Unhandled Routes
+app.all("*", (req, res, next) => {
+  res.status(404).json({
+    status: "fail",
+    message: `Can't find ${req.originalUrl} on this server!`,
+  });
+});
+
 // App Export
 module.exports = app;
