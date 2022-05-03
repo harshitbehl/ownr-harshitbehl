@@ -13,7 +13,7 @@ const catSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Model
+// Cat Model
 const Cat = mongoose.model("Cat", catSchema);
 
 module.exports = Cat;

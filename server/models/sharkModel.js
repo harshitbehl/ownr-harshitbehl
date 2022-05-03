@@ -13,7 +13,7 @@ const sharkSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Model
+// Shark Model
 const Shark = mongoose.model("Shark", sharkSchema);
 
 module.exports = Shark;
