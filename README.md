@@ -1,4 +1,4 @@
-<img src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/139427/ownr-logo-stp.png" width="500" />
+<img src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/139427/ownr-logo-stp.png" width="400" />
 
 ---
 
@@ -45,7 +45,7 @@ Start the server
   - SVG Illustration animation on first render.
   - A delayed animated attention grabbing button, which will guide towards the carousel section.
   - SVG waves section divider for modern look and feel.
-- Carousel section with background inspired from build with assembly's website.
+- Carousel section with background inspired from ownr's website.
   - Modern & attractive carousel design.
   - Carousel is interactive and images are rendered based on the selected filter options.
   - Select all available options to display combination of those options in random order.
@@ -86,7 +86,7 @@ Start the server
 
 **Design**
 
-- Select & wireframe application layout & design, take inspiration from build with assembly website.
+- Select & wireframe application layout & design, take inspiration from ownr's website.
 - Select application theme, color pallette & typography.
 - Break application into components while ensuring it stays scalable.
 
