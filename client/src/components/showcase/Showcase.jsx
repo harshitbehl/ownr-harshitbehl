@@ -24,7 +24,7 @@ function Showcase() {
             Take Home Task
           </h1>
           <p>Interactive Carousel Task, by Harshit Behl</p>
-          <a href="#task-section">
+          <a href="#carousel-section">
             <motion.button
               animate={{ scale: [1, 1.1, 1] }}
               transition={{
