@@ -3,10 +3,12 @@
 
 .carousel-section {
   background-color: variables.$primary-theme-color;
-  //   height: 100vh;
+
+  @include mixins.phone {
+    height: 100vh;
+  }
 
   &__container {
-    // height: 100%;
     padding: 10rem 0 20rem 0;
 
     @include mixins.phone {
@@ -42,11 +44,20 @@
     padding: 2rem;
     border: 0.1rem solid #a08cdf;
     border-radius: 1rem;
+
+    @include mixins.phone {
+      width: 100%;
+      height: 50rem;
+    }
   }
 
   &__filter-container {
     height: 20%;
     text-align: center;
+
+    @include mixins.phone {
+      height: 30%;
+    }
 
     h3 {
       color: white;
@@ -87,10 +98,20 @@
     align-items: center;
     position: relative;
 
+    @include mixins.phone {
+      height: 70%;
+    }
+
     img {
       height: 48rem;
       width: 80rem;
       border-radius: 1rem;
+
+      @include mixins.phone {
+        width: 100%;
+
+        height: auto;
+      }
     }
 
     .carousel-section__no-selection {
@@ -102,6 +123,11 @@
       font-size: 2.5rem;
       font-weight: 300;
       color: white;
+
+      @include mixins.phone {
+        text-align: center;
+        font-size: 1.6rem;
+      }
     }
 
     .carousel-section__loading {

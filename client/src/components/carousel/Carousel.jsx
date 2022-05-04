@@ -22,14 +22,14 @@ function Carousel() {
             "https://ownrapi-harshitbehl.herokuapp.com/api/v1/animals/sharks"
           );
           setPhotos(res.data.data.sharks);
-          photos.length > current && setCurrent(0);
+          photos.length < current && setCurrent(0);
           setStatus("success");
         } else if (isCatActive && !isSharkActive) {
           const res = await axios.get(
             "https://ownrapi-harshitbehl.herokuapp.com/api/v1/animals/cats"
           );
           setPhotos(res.data.data.cats);
-          photos.length > current && setCurrent(0);
+          photos.length < current && setCurrent(0);
           setStatus("success");
         } else if (isSharkActive && isCatActive) {
           const res = await axios.get(
@@ -46,7 +46,7 @@ function Carousel() {
       }
     };
     getPhotos();
-  }, [isSharkActive, isCatActive]);
+  }, [isSharkActive, isCatActive, current, photos.length]);
 
   // Carousel Functions
   const prevImage = () => {
@@ -61,7 +61,7 @@ function Carousel() {
       <div className="carousel-section__container main-container">
         <h2 className="carousel-section__title section-title">Carousel Task</h2>
         <p className="carousel-section__subtitle">
-          Slide through the carousel for Cats & Shark photos
+          Interactive Carousel For Animal photos
         </p>
 
         <div className="carousel-section__content-container">
