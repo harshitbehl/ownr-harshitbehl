@@ -2,7 +2,7 @@
 
 ---
 
-# Build With Assembly Take Home Task
+# Ownr Take Home Task
 
 An interactive & fully responsive, full stack web application to display animal photos through carousel. 🚀
 

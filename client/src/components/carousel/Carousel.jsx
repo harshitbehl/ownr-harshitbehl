@@ -86,7 +86,10 @@ function Carousel() {
               </button>
             </div>
           </div>
-          <div className="carousel-section__carousel-container">
+          <div
+            className="carousel-section__carousel-container"
+            data-testid="carousel"
+          >
             <FaChevronLeft
               className="carousel-section__left-arrow"
               onClick={prevImage}
