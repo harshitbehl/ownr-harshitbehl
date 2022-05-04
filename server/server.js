@@ -6,7 +6,8 @@ const app = require("./app");
 dotenv.config({ path: "./config.env" });
 
 // DB Connection
-// To be implemented...
+const DB = process.env.DB_STRING.replace("<PASSWORD>", process.env.DB_PASSWORD);
+mongoose.connect(DB).then(() => console.log("DB Connection Successful!"));
 
 // App Listener
 const port = process.env.PORT || 5050;

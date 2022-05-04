@@ -2,17 +2,23 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
-// Enable Cors
+// Router Imports
+const animalRouter = require("./routes/animalRoutes");
+
+// Enable CORS
 app.use(cors({ origin: "*" }));
 
 // Middleware JSON body parser
 app.use(express.json());
 
 // Routes
-app.get("/api/v1/test", (req, res) => {
-  res.status(200).json({
-    status: "success",
-    message: "Test Successful!",
+app.use("/api/v1/animals", animalRouter);
+
+// Unhandled Routes
+app.all("*", (req, res, next) => {
+  res.status(404).json({
+    status: "fail",
+    message: `Can't find ${req.originalUrl} on this server!`,
   });
 });
 

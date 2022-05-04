@@ -4,7 +4,7 @@
   "description": "Ownr Take Home Task API",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "author": "Harshit Behl",
   "license": "ISC",
